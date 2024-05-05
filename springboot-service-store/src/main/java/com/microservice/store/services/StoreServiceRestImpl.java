@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -14,6 +15,8 @@ import com.microservice.store.models.Celular;
 import com.microservice.store.models.Store;
 
 @Service("serviceRest")
+
+
 public class StoreServiceRestImpl implements StoreService {
 
 	@Autowired
